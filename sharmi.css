@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* --- HEADER --- */
+header {
+    background: #2b7a0b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- HERO SECTION (HOME PAGE) --- */
+.hero {
+    background: #7fc96e;
+    padding: 70px;
+    text-align: center;
+    color: white;
+}
+
+/* --- PAGE SECTIONS --- */
+.section {
+    background: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* --- GRID FOR SERVICE CARDS --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* --- CLICKABLE SERVICE CARDS --- */
+.card {
+    background: #2b7a0b;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    display: block;        /* Important for clickable area */
+    text-decoration: none; /* Remove underline */
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #1e5a07;
+    transform: scale(1.05);   /* Zoom effect */
+}
+
+/* --- FORMS (Support Page) --- */
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    background: #2b7a0b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #1e5a07;
+}
+
+/* --- FOOTER --- */
+footer {
+    background: #2b7a0b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+/* PAGE LOAD ALERT */
+.page-alert {
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2b7a0b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: top 0.5s ease;
+    z-index: 9999;
+}
+
+/* PAGE LOAD ALERT */
+.page-alert {
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2b7a0b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: top 0.5s ease;
+    z-index: 9999;
+}
+
+.page-alert.show {
+    top: 20px;
+}
+/* 🌙 THEME BUTTON */
+.theme-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    background: rgba(255,255,255,0.2);
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #2b7a0b;
+        padding: 10px;
+    }
+
+    nav.show-menu {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
